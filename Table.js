@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 const ComponentName = props => {
   const [users, setUsers] = useState([
@@ -68,12 +68,12 @@ const ComponentName = props => {
       <table>
         <thead>
           <tr>
-            <th onClick={handleSorting}>Nome</th>
-            <th onClick={handleSorting}>Cognome</th>
+            <th onClick={handleSorting}>Name</th>
+            <th onClick={handleSorting}>Surname</th>
             <th onClick={handleSorting}>Username</th>
             <th onClick={handleSorting}>Email</th>
-            <th onClick={handleSorting}>Telefono</th>
-            <th onClick={handleSorting}>Indirizzo</th>
+            <th onClick={handleSorting}>Phone</th>
+            <th onClick={handleSorting}>Address</th>
             <th onClick={handleSorting}>Cap</th>
             <th onClick={handleSorting}>City</th>
             <th onClick={handleSorting}>Province</th>
