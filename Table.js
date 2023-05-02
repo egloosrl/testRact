@@ -20,10 +20,10 @@ const ComponentName = props => {
       username: "luigi.verdi",
       email: "luigi.verdi@email.com",
       phone: "1234567890",
-      address: "Via Roma 1",
+      address: "Via Verdi 1",
       cap: "12345",
-      city: "Roma",
-      province: "RM",
+      city: "Napoli",
+      province: "NA",
       state: "Italia"
     },
     {
@@ -32,7 +32,7 @@ const ComponentName = props => {
       username: "giovanni.bianchi",
       email: "giovanni.bianchi@email.com",
       phone: "1234567890",
-      address: "Via Roma 1",
+      address: "Via Rossi 1",
       cap: "12345",
       city: "Roma",
       province: "RM",
@@ -41,26 +41,26 @@ const ComponentName = props => {
   ])
 
   const handleSorting = e => {
-    // Funzione di ordinamento
+    // Table sorting
   }
 
   const handleFilter = e => {
-    // Funzione di filtraggio
+    // Table filtering
   }
 
   return (
     <>
       <div className="filters">
         <div className="filter">
-          <label htmlFor="name">Città</label>
+          <label htmlFor="name">City</label>
           <input type="checkbox" name="city" id="city" onClick={handleFilter} />
         </div>
         <div className="filter">
-          <label htmlFor="name">Provincia</label>
+          <label htmlFor="name">Province</label>
           <input type="checkbox" name="province" id="province" onClick={handleFilter} />
         </div>
         <div className="filter">
-          <label htmlFor="name">Stato</label>
+          <label htmlFor="name">State</label>
           <input type="checkbox" name="state" id="state" onClick={handleFilter} />
         </div>
       </div>
@@ -75,9 +75,9 @@ const ComponentName = props => {
             <th onClick={handleSorting}>Telefono</th>
             <th onClick={handleSorting}>Indirizzo</th>
             <th onClick={handleSorting}>Cap</th>
-            <th onClick={handleSorting}>Città</th>
-            <th onClick={handleSorting}>Provincia</th>
-            <th onClick={handleSorting}>Stato</th>
+            <th onClick={handleSorting}>City</th>
+            <th onClick={handleSorting}>Province</th>
+            <th onClick={handleSorting}>State</th>
           </tr>
         </thead>
 
